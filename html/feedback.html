@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/feedback.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div ><a href="../index.html"><img src="../images/logo.jpeg" width="50px" class="logo-image"></a><span class="logo">Vishnu</span></div>
+            <ul class="links">
+                <li class="one"><a href="../index.html">Home</a></li>
+                <li class="one"><a href="about.html">About Me</a></li>
+                <li class="one"><a href="profile.html">Profile</a></li>
+                <li class="one"><a href="interest.html">Interests</a></li>
+                <li class="one"><a href="calender.html">Calender</a></li>
+                <li class="one"><a href="location.html">Location</a></li>
+                <li class="one"><a href="contact.html">Contact Us</a></li>
+                <li class="one" style="padding-right: 10px;"><a class="one1"href="feedback.html">Feedback</a></li>
+            </ul>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"  id="o_btn"></i>
+                <i class="fa-solid fa-xmark"  id="x_btn"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu " id="drop_dwn">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="interest.html">Interests</a></li>
+            <li><a href="calender.html">Calender</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </div>
+        <script>
+            let open_btn=document.getElementById('o_btn')
+            let close_btn=document.getElementById('x_btn')
+            let drop_dwn=document.getElementById('drop_dwn')
+            open_btn.addEventListener('click',()=>{
+                drop_dwn.style.overflow="visible"
+                o_btn.style.display="none"
+                x_btn.style.display="block"
+            })
+            close_btn.addEventListener('click',()=>{
+                drop_dwn.style.overflow="hidden"
+                o_btn.style.display="block"
+                x_btn.style.display="none"
+            })       
+        </script>
+    </header>
+    <h2 class="h2">Feedback Form</h2>
+    <center>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScj1LEGu6LlL4-3urwec4fHtb2SPIMxz3FgYWweW4dqRaF3Kw/viewform?embedded=true" width="60%" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</center>
+</body>
+</html>
